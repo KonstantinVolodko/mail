@@ -74,18 +74,77 @@
             font-size: 12px;
         }
 
+        .footerTd {
+            padding-bottom: 23px;
+        }
+
         .footerTitle {
             font-style: normal;
             font-weight: 700;
             font-size: 14px;
             color: #FFFFFF;
         }
+
+        .border {
+            border-top: 1px solid #ffffff;
+            background-color: #005FAF;
+            color: #FFFFFF;
+        }
+
+        .borderTd {
+            padding-top: 11px;
+            padding-bottom: 9px;
+        }
+
+        @media (max-width: 900px) {
+            .table-850 {
+                width: 600px !important;
+            }
+
+            .table-600 {
+                width: 550px !important;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .table-850 {
+                width: 400px !important;
+            }
+
+            .table-600 {
+                width: 370px !important;
+            }
+
+            .logo {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+
+            .logo img {
+                margin: 0 auto !important;
+            }
+
+            .menu {
+                display: block !important;
+                margin: 0 auto !important;
+            }
+        }
+
+        @media (max-width: 620px) {
+            .table-850 {
+                width: 300px !important;
+            }
+
+            .table-600 {
+                width: 260px !important;
+            }
+        }
 	</style>
 </head>
 
 <body style="margin: 0; padding: 0;">
 	<div style="font-size:0px; font-color:#ffffff;opacity:0;visibility:hidden;width:0;height:0;display:none;">Тестовое письмо</div>
-	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#ec5483">
+	<table cellpadding="0" cellspacing="0" width="100%" bgcolor="#FFFFFF">
         <tr>
             <td>
                 <table class="main table-850" collpadding="0" collspacing="0" width="600" align="center">
@@ -187,7 +246,7 @@
                     </tr>
 
                     <tr>
-                        <td bgcolor="#005FAF">
+                        <td class="footerTd" bgcolor="#005FAF">
                             <table class="footer" width="520" align="center">
                                 <tr>
                                     <td class="footerTitle" style="font-family: Arial, Halvetica, sans-serif, Montserrat;">Контакты</td>
@@ -201,7 +260,7 @@
                                 </tr>
                                 <tr>
                                     <td style="font-family: Arial, Halvetica, sans-serif, Montserrat;">8 800 551-20-59</td>
-                                    <td style="font-family: Arial, Halvetica, sans-serif, Montserrat;">Куда летим</td>
+                                    <td style="font-family: Arial, Halvetica, sans-serif, Montserrat;"><a href="#" style="color: #FFFFFF; text-decoration: none;">Куда летим</a></td>
                                     <td>
                                         <table>
                                             
@@ -215,16 +274,27 @@
                                     </td>
                                 </tr>
                                 <tr>
-                                    <td style="font-family: Arial, Halvetica, sans-serif, Montserrat;">client@scanner.travel</td>
-                                    <td style="font-family: Arial, Halvetica, sans-serif, Montserrat;">Как получить скидку</td>
+                                    <td style="font-family: Arial, Halvetica, sans-serif, Montserrat; color: #FFFFFF;" >client@scanner.travel</td>
+                                    <td style="font-family: Arial, Halvetica, sans-serif, Montserrat;"><a href="#" style="color: #FFFFFF; text-decoration: none;">Как получить скидку</a></td>
                                     <td rowspan="3"></td>
                                 </tr>
                                 <tr>
                                     <td rowspan="2" style="font-family: Arial, Halvetica, sans-serif, Montserrat;">127473, Москва, 1-й <br />Волконский переулок,<br />13с2 (на карте)</td>
-                                    <td style="font-family: Arial, Halvetica, sans-serif, Montserrat;">О нас</td>
+                                    <td style="font-family: Arial, Halvetica, sans-serif, Montserrat;"><a href="#" style="color: #FFFFFF; text-decoration: none;">О нас</a></td>
                                 </tr>
                                 <tr>
                                     <td></td>
+                                </tr>
+                            </table>
+                        </td>
+                    </tr>
+
+                    <tr class="border">
+                        <td class="borderTd">
+                            <table width="520" align="center" style="font-family: Arial, Halvetica, sans-serif, Montserrat;">
+                                <tr>
+                                    <td>ИНН 9723013199, ОГРН 1177746188400</td>
+                                    <td ><a href="#" style="color: #FFFFFF">Отписаться</a></td>
                                 </tr>
                             </table>
                         </td>
